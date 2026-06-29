@@ -241,3 +241,17 @@ form{
 }
 
 }
+
+.chart-section{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+#dashboardChart{
+    width:100%;
+}

@@ -220,3 +220,63 @@ function searchNGO() {
 
     document.getElementById("searchResults").innerHTML = output;
 }
+
+// Dashboard Chart
+
+const chartCanvas = document.getElementById("dashboardChart");
+
+if(chartCanvas){
+
+    const ngos = JSON.parse(localStorage.getItem("ngos")) || [];
+    const volunteers = JSON.parse(localStorage.getItem("volunteers")) || [];
+    const donors = JSON.parse(localStorage.getItem("donors")) || [];
+
+    new Chart(chartCanvas,{
+
+        type:"bar",
+
+        data:{
+
+            labels:["NGOs","Volunteers","Donors"],
+
+            datasets:[{
+
+                label:"Registrations",
+
+                data:[
+                    ngos.length,
+                    volunteers.length,
+                    donors.length
+                ],
+
+                backgroundColor:[
+                    "#4CAF50",
+                    "#2196F3",
+                    "#FF9800"
+                ],
+
+                borderRadius:8
+
+            }]
+
+        },
+
+        options:{
+            responsive:true,
+
+            plugins:{
+                legend:{
+                    display:false
+                }
+            },
+
+            scales:{
+                y:{
+                    beginAtZero:true
+                }
+            }
+        }
+
+    });
+
+}
