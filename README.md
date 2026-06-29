@@ -73,7 +73,7 @@ community-aid-bridge/
 
 1. Clone the repository
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/community-aid-bridge.git
+https://github.com/disha26tawar-cloud/community-aid-bridge
 
 2. Open the project folder
 
@@ -134,6 +134,8 @@ AI was used to assist with:
 
 All generated code was reviewed, modified, integrated, tested, and validated by the project author before submission.
 
+repo: https://github.com/disha26tawar-cloud/community-aid-bridge
+deploy link: https://community-aid-bridge.web.app/index.html
 ---
 
 👩‍💻 Developer
