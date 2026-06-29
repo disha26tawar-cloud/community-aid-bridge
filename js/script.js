@@ -50,3 +50,16 @@ volunteerForm.reset();
 });
 
 }
+
+const donorForm = document.getElementById("donorForm");
+
+if (donorForm) {
+    donorForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        document.getElementById("donorSuccess").innerText =
+            "Donation Registered Successfully!";
+
+        donorForm.reset();
+    });
+}
