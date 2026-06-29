@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NGO Registration</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <h2 class="logo">Community Aid Bridge</h2>
-</nav>
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Community Aid Bridge</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ngo.html">NGO</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donor.html">Donor</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
 
 <section class="form-section">
 
@@ -18,50 +30,19 @@
 
 <form id="ngoForm">
 
-<input type="text"
-placeholder="NGO Name"
-required>
+<input type="text" id="ngoName" placeholder="NGO Name" required>
 
-<input type="email"
-placeholder="Email"
-required>
+<input type="email" id="ngoEmail" placeholder="Email" required>
 
-<input type="tel"
-placeholder="Contact Number"
-required>
+<input type="text" id="ngoLocation" placeholder="Location" required>
 
-<input type="text"
-placeholder="City"
-required>
+<textarea id="ngoNeed" placeholder="Requirements"></textarea>
 
-<select required>
-
-<option value="">Select Help Needed</option>
-
-<option>Volunteers</option>
-
-<option>Food</option>
-
-<option>Books</option>
-
-<option>Clothes</option>
-
-<option>Funds</option>
-
-<option>Medical Supplies</option>
-
-</select>
-
-<textarea
-rows="5"
-placeholder="Describe Your Requirement"
-required></textarea>
-
-<button type="submit">
-Submit
-</button>
+<button type="submit">Register NGO</button>
 
 </form>
+
+<p id="ngoSuccess"></p>
 
 </section>
 

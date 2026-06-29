@@ -1,17 +1,54 @@
-<h2>Donor Registration</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Community Aid Bridge</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ngo.html">NGO</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donor.html">Donor</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="form-section">
+
+<h1>Donor Registration</h1>
 
 <form id="donorForm">
-    <input type="text" id="donorName" placeholder="Full Name" required>
 
-    <input type="email" id="donorEmail" placeholder="Email" required>
+<input type="text" id="donorName" placeholder="Full Name" required>
 
-    <input type="text" id="donationType" placeholder="Donation Type (Food, Clothes, Books)" required>
+<input type="email" id="donorEmail" placeholder="Email" required>
 
-    <input type="number" id="quantity" placeholder="Quantity" required>
+<input type="text" id="donationType" placeholder="Donation Type" required>
 
-    <textarea id="message" placeholder="Additional Details"></textarea>
+<input type="number" id="quantity" placeholder="Quantity" required>
 
-    <button type="submit">Donate</button>
+<textarea id="message" placeholder="Additional Details"></textarea>
+
+<button type="submit">Donate</button>
+
 </form>
 
 <p id="donorSuccess"></p>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

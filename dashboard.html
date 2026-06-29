@@ -1,18 +1,69 @@
-<h2>Community Aid Bridge Dashboard</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Community Aid Bridge</title>
 
-<div class="dashboard">
-    <div class="card">
-        <h3>NGOs</h3>
-        <p>10</p>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Community Aid Bridge</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ngo.html">NGO</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donor.html">Donor</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h2 id="ngoCount">0</h2>
+        <p>NGOs Registered</p>
     </div>
 
-    <div class="card">
-        <h3>Volunteers</h3>
-        <p>35</p>
+    <div class="stat-box">
+        <h2 id="volunteerCount">0</h2>
+        <p>Volunteers Registered</p>
     </div>
 
-    <div class="card">
-        <h3>Donations</h3>
-        <p>20</p>
+    <div class="stat-box">
+        <h2 id="donorCount">0</h2>
+        <p>Donors Registered</p>
     </div>
-</div>
+
+</section>
+
+<section class="search-section">
+
+    <h2>Search NGOs</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by NGO Name or Location">
+
+    <button onclick="searchNGO()">Search</button>
+
+    <div id="searchResults"></div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Community Aid Bridge | Built for Hackathon</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+

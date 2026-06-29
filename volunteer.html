@@ -4,69 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Registration</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <h2 class="logo">Community Aid Bridge</h2>
-</nav>
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Community Aid Bridge</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="ngo.html">NGO</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donor.html">Donor</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
 
 <section class="form-section">
 
-<h1>Volunteer Registration</h1>
+    <h1>Volunteer Registration</h1>
 
-<form id="volunteerForm">
+    <form id="volunteerForm">
 
-<input
-type="text"
-placeholder="Full Name"
-required>
+        <input type="text" id="name" placeholder="Full Name" required>
 
-<input
-type="email"
-placeholder="Email"
-required>
+        <input type="email" id="email" placeholder="Email Address" required>
 
-<input
-type="tel"
-placeholder="Phone Number"
-required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
 
-<input
-type="text"
-placeholder="City"
-required>
+        <input type="text" id="skills" placeholder="Skills (Teaching, Medical, etc.)" required>
 
-<select required>
+        <button type="submit">Register</button>
 
-<option value="">Skills</option>
+    </form>
 
-<option>Teaching</option>
-
-<option>Medical</option>
-
-<option>Food Distribution</option>
-
-<option>Event Management</option>
-
-<option>Technical Support</option>
-
-<option>General Volunteer</option>
-
-</select>
-
-<textarea
-rows="5"
-placeholder="Why do you want to volunteer?"
-required>
-</textarea>
-
-<button type="submit">
-Register
-</button>
-
-</form>
+    <p id="successMessage"></p>
 
 </section>
 
@@ -74,3 +50,4 @@ Register
 
 </body>
 </html>
+   
